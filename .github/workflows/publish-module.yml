@@ -1,0 +1,10 @@
+name: Publish Module
+on:
+  push:
+    branches:
+      - main
+jobs:
+  check-and-publish:
+    uses: lifion/core-commons/.github/workflows/publish-module.yml@main
+    secrets:
+      NPM_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}

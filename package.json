@@ -1,0 +1,50 @@
+{
+  "name": "lifion-errors",
+  "version": "0.0.0",
+  "description": "A specialization of Error for propagation of errors through consumers",
+  "keywords": [
+    "error",
+    "exceptions",
+    "utilities"
+  ],
+  "author": "Edgardo Avilés-López <Edgardo.Aviles@ADP.com>",
+  "maintainers": [],
+  "contributors": [],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://eaviles@github.com/lifion/lifion-errors.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lifion/lifion-errors/issues"
+  },
+  "homepage": "https://github.com/lifion/lifion-errors#readme",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "!**/*.test.js"
+  ],
+  "engines": {
+    "node": ">=14.19.1"
+  },
+  "scripts": {
+    "build-docs": "commons",
+    "build-types": "commons",
+    "check-types": "commons",
+    "clean-types": "commons",
+    "eslint": "commons",
+    "prepare": "commons",
+    "prepublishOnly": "npm run build-types && npm run prettier",
+    "prettier": "commons",
+    "test": "commons",
+    "version": "commons"
+  },
+  "dependencies": {
+    "deep-copy": "^1.4.2",
+    "fast-safe-stringify": "^2.1.1"
+  },
+  "devDependencies": {
+    "chance": "^1.1.8",
+    "core-commons": "^1.0.0-alpha.7"
+  }
+}
